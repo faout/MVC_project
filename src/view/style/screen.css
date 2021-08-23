@@ -1,0 +1,92 @@
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: rgb(2, 62, 138);
+}
+
+nav ul li {
+    text-align: center; 
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+figure {
+    float: right;
+}
+
+figure img {
+    max-width: 50%;
+    max-height: 500px;
+}
+
+ul figure {
+    float: none;
+    display: inline-grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+ul figure img {
+    width: 100px;
+}
+
+/*.list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.list li {
+    padding: 5px;
+    background-color: #ccc;
+}*/
+
+.waterbottle {
+    display: flex;
+}
+
+.pagination {
+    display: grid
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Style formulaires */
+
+input[type=text], input[type=password] {
+    margin: 8px 0;
+    padding: 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid rgb(0, 119, 182);
+}
+
+@keyframes feedbackAnimation{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#feedback {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    animation-name: feedbackAnimation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
